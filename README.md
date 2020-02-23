@@ -1,7 +1,10 @@
 # flag-picker
  This repo contains REST services using Spring Boot that allows user to pick different world flags. 
  After initial boot up this service picks up the content from the continents.txt file and uploads it to the database
-
+ Flags can be fetched for either:
+ `1. All the countries (**/country**)`
+ `2. Specific country (**/country/{countryName}**)`
+ `3. For countries belonging to a continent (**/country?continent=Asia**)`
 **Steps to run the application.**
 1. mvn clean install
 2. java -jar target/demo-0.0.1-SNAPSHOT.jar
