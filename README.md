@@ -47,4 +47,4 @@ defined regex support provided by MongoDB driver for querying records.
    
 **NOSQL Scheme**
 
-It's a single Country table with flag information as well as continent name (NOSQL Schema.png)
+It's a single Country document with flag information as well as continent name (NOSQL Schema.png)
