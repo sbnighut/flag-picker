@@ -2,6 +2,7 @@
  This repo contains REST services using Spring Boot that allows user to pick different world flags. 
  After initial boot up this service picks up the content from the continents.txt file and uploads it to the database
  Flags can be fetched for either:
+ 
  `1. All the countries (**/country**)`
  
  `2. Specific country (**/country/{countryName}**)`
