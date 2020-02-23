@@ -1,5 +1,6 @@
 # flag-picker
- This repo contains REST services using Spring Boot that allows user to pick different world flags 
+ This repo contains REST services using Spring Boot that allows user to pick different world flags. 
+ After initial boot up this service picks up the content from the continents.txt file and uploads it to the database
 
 **Steps to run the application.**
 1. mvn clean install
@@ -14,9 +15,11 @@
 
     `http://localhost:8080/country/{countryName}`
 
-Known Limitations:
-1. The API is currently case sensitive for the path and query parameters
-2. Other CRUD operations such as POST, PUT and DELETE are not yet supported for simplicity
+**Known Limitations:**
+1. The API is currently case sensitive for the path and query parameters.
+2. Other CRUD operations such as POST, PUT and DELETE are not yet supported for simplicity.
+3. A lot of things can be made confguration based such as file path for reaching content, common 
+place for storing exception emplates etc. Omitting it for time being due to time constraints.
 
 **Schema used for Database:**
 1. I am using `NOSQL` database instead of `SQL`. 
@@ -33,3 +36,5 @@ Why not use SQL with one table instead of MongoDB ?
 At the moment both SQL and NOSQL would perform comparably the same. I am only using MongoDB because of the well 
 defined regex support provided by MongoDB driver for querying records.
    
+**SQL Scheme**
+It's a single Country table with flag information as well as continent name (NOSQL Schema.png)
