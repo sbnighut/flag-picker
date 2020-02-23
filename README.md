@@ -23,6 +23,7 @@
     `http://localhost:8080/country/{countryName}`
 
 **Known Limitations:**
+
 1. The API is currently case sensitive for the path and query parameters.
 2. Other CRUD operations such as POST, PUT and DELETE are not yet supported for simplicity.
 3. A lot of things can be made confguration based such as file path for reaching content, common 
@@ -32,6 +33,7 @@ place for storing exception emplates etc. Omitting it for time being due to time
 1. I am using `NOSQL` database instead of `SQL`. 
     
 **Reason behind using NOSQL:**
+
 A traditional route was to create a SQL database with two tables "Country" and "Continent" and 
 store the foreign key reference of Continent in the Country table.
 But as per the requirements there is a dire need for search operations and also we are not updating 
@@ -43,5 +45,6 @@ Why not use SQL with one table instead of MongoDB ?
 At the moment both SQL and NOSQL would perform comparably the same. I am only using MongoDB because of the well 
 defined regex support provided by MongoDB driver for querying records.
    
-**SQL Scheme**
+**NOSQL Scheme**
+
 It's a single Country table with flag information as well as continent name (NOSQL Schema.png)
