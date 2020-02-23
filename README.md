@@ -1,4 +1,4 @@
-# flag-picker
+# flag-picker (https://github.com/sbnighut/flag-picker)
  This repo contains REST services using Spring Boot that allows user to pick different world flags. 
  After initial boot up this service picks up the content from the continents.txt file and uploads it to the database
  Flags can be fetched for either:
