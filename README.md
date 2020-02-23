@@ -26,8 +26,8 @@
 
 1. The API is currently case sensitive for the path and query parameters.
 2. Other CRUD operations such as POST, PUT and DELETE are not yet supported for simplicity.
-3. A lot of things can be made confguration based such as file path for reaching content, common 
-place for storing exception emplates etc. Omitting it for time being due to time constraints.
+3. A lot of things can be made confguration based such as file path for reading content, common 
+place for storing exception templates etc. Omitting it for time being due to time constraints.
 
 **Schema used for Database:**
 1. I am using `NOSQL` database instead of `SQL`. 
