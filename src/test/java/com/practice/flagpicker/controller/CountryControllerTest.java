@@ -1,6 +1,6 @@
 package com.practice.flagpicker.controller;
 
-import com.practice.flagpicker.business.CountryService;
+import com.practice.flagpicker.service.CountryService;
 import com.practice.flagpicker.exception.CountryNotFoundException;
 import com.practice.flagpicker.model.Country;
 import org.junit.Test;
@@ -13,9 +13,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Optional;
+
 import static org.hamcrest.Matchers.hasSize;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.BDDMockito.given;
@@ -47,16 +46,6 @@ public class CountryControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(1)))
                 .andExpect(jsonPath("$[0].name").value("foo"));
-    }
-
-    @Test
-    public void getCountries_returns400_formissingcontinentname()
-            throws Exception {
-        given(service.getAllCountriesByContinent(anyString())).willThrow(new CountryNotFoundException("No continent with name..."));
-
-        ResultActions resultActions = mvc.perform(get("/country")
-                .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isBadRequest());
     }
 
     @Test

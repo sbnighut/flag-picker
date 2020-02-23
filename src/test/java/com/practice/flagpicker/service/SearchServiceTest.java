@@ -1,18 +1,13 @@
-package com.practice.flagpicker.business;
+package com.practice.flagpicker.service;
 
-import com.practice.flagpicker.exception.CountryNotFoundException;
 import com.practice.flagpicker.model.Country;
 import com.practice.flagpicker.repository.CountryRepository;
 import org.mockito.Mockito;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.LinkedList;
-import java.util.Optional;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.when;
 public class SearchServiceTest {
 

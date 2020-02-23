@@ -1,16 +1,12 @@
 package com.practice.flagpicker.controller;
 
 import com.practice.flagpicker.model.Country;
-import com.practice.flagpicker.business.CountryService;
+import com.practice.flagpicker.service.CountryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Optional;
 
 /**
  * Created by snighut on 2/22/20.

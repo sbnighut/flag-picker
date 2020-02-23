@@ -1,4 +1,4 @@
-package com.practice.flagpicker.business;
+package com.practice.flagpicker.service;
 
 import com.practice.flagpicker.exception.CountryNotFoundException;
 import com.practice.flagpicker.model.Continent;
@@ -11,7 +11,6 @@ import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service

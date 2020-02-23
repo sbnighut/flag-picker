@@ -2,7 +2,7 @@ package com.practice.flagpicker;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.practice.flagpicker.business.CountryService;
+import com.practice.flagpicker.service.CountryService;
 import com.practice.flagpicker.model.Continent;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
