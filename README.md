@@ -4,11 +4,11 @@
  
  Flags can be fetched for either:
  
- `1. All the countries (**/country**)`
+ `1. All the countries (/country)`
  
- `2. Specific country (**/country/{countryName}**)`
+ `2. Specific country flag(/country/{countryName})`
  
- `3. For countries belonging to a continent (**/country?continent=Asia**)`
+ `3. For countries belonging to a continent (/country?continent=Asia)`
  
 **Steps to run the application.**
 1. mvn clean install
