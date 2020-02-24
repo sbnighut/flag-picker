@@ -36,9 +36,9 @@ public class DemoApplication {
 			try {
 				List<Continent> continents = mapper.readValue(inputStream, typeReference);
 				countryService.saveContinents(continents);
-				System.out.println("Users Saved!");
+				System.out.println("Continents Saved!");
 			} catch (IOException e){
-				System.out.println("Unable to save users: " + e.getMessage());
+				System.out.println("Unable to save continent flags: " + e.getMessage());
 			}
 		};
 	}
